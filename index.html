@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Jojoatalk</title>
   </head>
   <body>
-    <div id="status-bar__column">
+    <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fas fa-wifi"></i>
@@ -17,7 +18,7 @@
       </div>
       <div class="status-bar__column">
         <span>110%</span>
-        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
         <i class="fas fa-bolt"></i>
       </div>
     </div>
@@ -42,3 +43,16 @@
     ></script>
   </body>
 </html>
+
+<!--사용된 CSS hack 에 대해서 이렇게 이해했습니다. 
+    1. body 100% 안에 있는 status-bar 전체를 우선 
+      화면에서 가운데 위치하도록 justify-content:center; 를
+    적용합니다. 그러면 전체 요소들이 모두 가운데 위치하게 됩니다. 
+    2. status-bar__column에 각각 33% 값을 주어 
+    status-bar를 3등분 합니다. 그러면 스크린을 줄이거나 
+    늘이더라도 status-bar__column들은 그 안에서 왼쪽 
+    정렬로 위치하게 됩니다. 
+    3. 1번째 column은 가장 왼쪽(기본값), 2번째는 
+    가운데(center) 그리고 3번째는 가장 끝(flex-end)으로 
+    위치시키면 시계는 가운데에 있고 나머지 요소는 가장자리에 
+    위치하게 됩니다.-->
