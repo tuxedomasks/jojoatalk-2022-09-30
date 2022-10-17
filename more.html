@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Jojoatalk</title>
+    <title>More - Jojoatalk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -24,23 +24,19 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span
           ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
         ></span>
+        <span class="screen-header__icons-badge badge"> </span>
+        <!--숙제 스크린헤더 nitification-->
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i>
-      Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
+    <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -49,33 +45,41 @@
           />
           <div class="user-component__text">
             <h4 class="user-component__title">Tuxedo Mask</h4>
-            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+            <h6 class="user-component__subtitle">+001-169-8888-8888</h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="far fa-calendar"></i><span>Calendar</span>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="profile.png"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
+        <div class="icon-row__icon">
+          <i class="fas fa-paint-roller"></i><span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-smile-beam"></i><span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-file-invoice-dollar"></i><span></span>Account
+        </div>
+      </div>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__titls">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
             </div>
+            <span class="more-suggestions__icon-text">Jojoa Story</span>
           </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right fa-xs"></i>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
             </div>
+            <span class="more-suggestions__icon-text">Jojoa Story</span>
           </div>
         </div>
       </div>
@@ -85,7 +89,7 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fas fa-user fa-2x"></i
+            ><i class="far fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
@@ -114,16 +118,3 @@
     ></script>
   </body>
 </html>
-
-<!--사용된 CSS hack 에 대해서 이렇게 이해했습니다. 
-    1. body 100% 안에 있는 status-bar 전체를 우선 
-      화면에서 가운데 위치하도록 justify-content:center; 를
-    적용합니다. 그러면 전체 요소들이 모두 가운데 위치하게 됩니다. 
-    2. status-bar__column에 각각 33% 값을 주어 
-    status-bar를 3등분 합니다. 그러면 스크린을 줄이거나 
-    늘이더라도 status-bar__column들은 그 안에서 왼쪽 
-    정렬로 위치하게 됩니다. 
-    3. 1번째 column은 가장 왼쪽(기본값), 2번째는 
-    가운데(center) 그리고 3번째는 가장 끝(flex-end)으로 
-    위치시키면 시계는 가운데에 있고 나머지 요소는 가장자리에 
-    위치하게 됩니다.-->
