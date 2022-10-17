@@ -135,7 +135,7 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   box-sizing: border-box;
-  align-items: center;
+
   transition: all 0.3s ease-in-out;
 }
 
@@ -180,7 +180,7 @@
   opacity: 0;
 }
 
-.replay input:focus {
+.reply:focus-within input {
   width: 96vw;
   transform: translateX(-13%) translateY(-80px);
 }
